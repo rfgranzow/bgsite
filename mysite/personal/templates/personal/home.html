@@ -1,0 +1,84 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+{% load static %}
+
+<div class="row">
+    <div class="col-sm-3">
+        <div class="col-sm-12 thumbnail">
+            <br></br>
+            <img src="{% static 'personal/img/me.jpg' %}"/>
+            <div class="Python text-center">
+              <p><h3>Bob Granzow</h3></p>
+              <p><h5>Ph.D. Candidate</h5></p>
+              <p><h5>Industrial Engineering</h5></p>
+              <p><h5>Auburn University</h5></p>
+              <p><h5>E-mail: rfgranzow@gmail.com</h5></p>
+              <p><h5>Phone: (717) 608-6500</h5></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-9">
+        <div class="col-sm-12">
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <div class="col-sm-12 thumbnail">
+                        <img src="{% static 'personal/img/latex.png' %}">
+                        <div class="text-center">
+                            <p><a href="/LaTeX/" class="btn btn-primary btn-lg" role="button"><b>LaTeX Tutorials</b></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="col-sm-12  thumbnail">
+                        <img src="{% static 'personal/img/python.png' %}">
+                        <div class="text-center">
+                            <p><a href="/Pytuts/" class="btn btn-primary btn-lg" role="button"><b>Python Tutorials</b></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="col-sm-12  thumbnail">
+                        <img src="{% static 'personal/img/vba.png' %}">
+                        <div class="text-center">
+                            <p><a href="/VBA/" class="btn btn-primary btn-lg" role="button"><b>VBA Tutorials</b></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class="col-sm-4">
+                    <div class="col-sm-12  thumbnail">
+                        <img src="{% static 'personal/img/django.png' %}">
+                        <div class="text-center">
+                            <p><a href="/django/" class="btn btn-primary btn-lg" role="button"><b>Django Tutorials</b></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="col-sm-12  thumbnail">
+                        <img src="{% static 'personal/img/safety.png' %}">
+                        <div class="text-center">
+                            <p><a href="/safety/" class="btn btn-primary btn-lg" role="button"><b>Safety & Ergo Content</b></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="col-sm-12  thumbnail">
+                        <img src="{% static 'personal/img/cone.png' %}">
+                        <div class="text-center">
+                            <p><a href="/extra/" class="btn btn-primary btn-lg" role="button"><b>Extra Content</b></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "personal/header.html" %}
+{% block content %}
+{% load static %}
+
+<html>
+<body class="body">
+<div class="col-sm-12" align="center">
+    <object data="{% static 'personal/img/Granzow_Resume.pdf' %}" type="application/pdf" width="80%" height="700px">
+        <p>It appears you don't have a PDF plugin for this browser. You can <a href="{% static 'personal/img/Granzow_Resume.pdf' %}">click here to download the PDF file.</a></p>
+    </object>
+</div>
+</body>
+</html>
+
+{% endblock %}

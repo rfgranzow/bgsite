@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bob Granzow</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% load staticfiles %}
+
+  <link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+  <link rel="shortcut icon" href="{% static 'pine.ico' %}"/>
+
+  <style>
+      /* Remove the navbar's default rounded borders and increase the bottom margin */
+      .navbar {
+          margin-bottom: 0px;
+          border-radius: 0px;
+          background-color: #007bbf;
+          font-family: Verdana, Geneva, sans-serif;
+        }
+      /* Remove the jumbotron's default bottom margin */
+      .jumbotron {
+          margin-bottom: 0;
+        }
+      /* Add a gray background color and some padding to the footer */
+      .footer {
+          background-color: #ffffff;
+          padding: 3px;
+          font-family: Verdana, Geneva, sans-serif;
+        }
+      /*Changes header navigation bar settings*/
+      .navbar.navbar-default.navbar-fixed-top li a {
+        color: #ffffff;
+          font-family: Verdana, Geneva, sans-serif;
+        }
+     .navbar-default .navbar-nav > .active > a,
+     .navbar-default .navbar-nav > .active > a:hover,
+     .navbar-default .navbar-nav > .active > a:focus {
+        color: #000;
+        background: #0055bf;
+          font-family: Verdana, Geneva, sans-serif;
+     }
+    .navbar-default .navbar-nav .dropdown-toggle:active, .open .dropdown-toggle {
+        background:#007bbf !important;
+        color:#000 !important;
+    }
+     .navbar-default .navbar-brand,
+     .navbar-default .navbar-brand:hover,
+     .navbar-default .navbar-brand:focus {
+      color: #ffffff;
+          font-family: Verdana, Geneva, sans-serif;
+     }
+      /*changes color for navbar hover*/
+      ul.nav a:hover { color: #cccccc !important; }
+      .navbar-nav > li > .dropdown-menu { background-color: #2874A6; }
+      .navbar-nav > li > .dropdown-menu a{ color: #0055bf; }
+      .dropdown-menu > li > a:hover { background-color: #778899; }
+    }
+
+  </style>
+
+</head>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="/"><b>Bob Granzow</b></a>
+  </div>
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+      <li><a href="/">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Navigation<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/Pytuts/">Python</a></li>
+          <li><a href="/LaTeX/">LaTeX</a></li>
+          <li><a href="/VBA/">VBA</a></li>
+          <li><a href="/django/">Django</a></li>
+          <li><a href="/safety/">Safety and Ergonomics</a></li>
+          <li><a href="/extra/">Extra Content</a></li>
+        </ul>
+      </li>
+      <li><a href='/blog/'>Blog</a></li>
+      <li><a href='/CV/'>Resume</a></li>
+      <li><a href='/contact/'>Contact</a></li>
+    </ul>
+    </div>
+
+  </div>
+</nav>
+
+<div class="page-header">
+
+<body class="body" style="background-color:#ffffff">
+  <div class='container'>
+      <br><br>
+         {% block content %}
+         {% endblock %}
+      </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="footer">
+      <p><a href="/contact/">Contact</a> | <a href="http://www.linkedin.com/in/robertgranzow" target="blank">LinkedIn</a> | <a href="http://twitter.com/Bobs_Tweeter" target="blank">Twitter</a> | <a href="http://instagram.com/Bobs_Instant_Gram" target="blank">Instagram</a></p>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
